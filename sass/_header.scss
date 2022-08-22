@@ -2,16 +2,7 @@
 	border-bottom: 1px solid #ECECEC;
 }
 
-.logo-web {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	color: var(--accent-color);
-}
-.logo {
+.header-logo {
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
@@ -44,17 +35,16 @@
 	letter-spacing: 0.02em;
 	color: var(--first-title-color);
 	transition: var(--color-tranzition);
-}
-
-.header-link:hover,
-.header-link:focus {
+	&:focus, &:hover {
 	color: var(--accent-color);
 }
+}
+
+
 .current {
 	color: var(--accent-color);
 	position: relative;
-}
-.current::after {
+	&::after {
 	position: absolute;
 	content: '';
 	width: 100%;
@@ -63,6 +53,7 @@
 	border-radius: 2px;
 	left: 0;
 	bottom: -1px;
+}
 }
 
 .contact-icon {
@@ -87,11 +78,9 @@
 	display: flex;
 	align-items: center;
 	transition: var(--color-tranzition);
-}
-
-.header-tel:hover,
-.header-tel:focus {
+	&:hover, &:focus {
 	color: var(--accent-color);
+}
 }
 
 .header-mail{
@@ -103,9 +92,7 @@
 	display: flex;
 	align-items: center;
 	transition: var(--color-tranzition);
-
-}
-.header-mail:hover,
-.header-mail:focus {
+	&:hover, &:focus {
 	color: var(--accent-color);
+}
 }

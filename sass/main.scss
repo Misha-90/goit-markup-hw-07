@@ -1,3 +1,16 @@
+@import './base/reset';
+@import './base/comon';
+
+
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/title';
+
+
+
+@import './utils/variables';
+@import './utils/hiden';
 
 
 @import './header';

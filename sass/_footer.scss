@@ -2,7 +2,7 @@
 	background-color: #2F303A;
 	padding: 60px 0;
 }
-.logo-foter {
+.footer-logo {
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
@@ -73,11 +73,79 @@
 	align-items: center;
 	justify-content: center;
 	transition: var(--backgroun-tranzition);
+	&:hover, &:focus {
+	background-color: var(--accent-color);
 }
+}
+
 .footer-soc-icon {
 	fill: var(--icons-second-color);
 }
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-	background-color: var(--accent-color);
+
+
+.sig-up-box {
+	margin-left: 121px;
+}
+
+.sign-up-wrap {
+	display: flex;
+	gap: 10px;
+}
+
+.sign-up-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--second-text-color);
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.sign-up-text {
+	position: relative;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	padding-left: 16px;
+	color: rgba(255, 255, 255, 0.6);
+	&:focus {
+	border: 1px solid var(--accent-color);
+	outline: none;
+	cursor: pointer;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.sign-up-btn {
+	cursor: pointer;
+	min-width: 200px;
+	height: 50px;
+	background: var(--accent-color);
+	margin: 0;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	padding: 10px 28px 10px 28px;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--second-text-color);
+	transition: var(--backgroun-tranzition);
+	&:hover, &:focus {
+	background-color: #188CE8;
+}
+}
+
+.sign-up-icon {
+	display: flex;
+	margin-left: 10px;
+	fill: #FFFFFF;
 }

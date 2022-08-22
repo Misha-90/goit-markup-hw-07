@@ -23,6 +23,9 @@
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
 	transition: var(--border-tranzition);
+	&:hover, &:focus {
+	border-color: var(--second-btn-color);
+}
 }
 .customer-icon {
 	display: flex;
@@ -30,13 +33,9 @@
 	justify-content: center;
 	fill: var(--icons-first-color);
 	transition: var(--fill-tranzition);
-}
-.customer-link:hover,
-.customer-link:focus {
-	border-color: var(--second-btn-color);
-}
-
-.customer-link:hover .customer-icon,
-.customer-link:focus .customer-icon {
+	.customer-link:hover &,
+	.customer-link:focus & {
 	fill: var(--second-btn-color);
 }
+}
+
