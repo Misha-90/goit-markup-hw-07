@@ -3,12 +3,9 @@
 }
 
 .header-logo {
+	@include font(700, 26px, 31px, 0.03em);
 	font-family: "Raleway";
 	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
 	color: #000000;
 	margin-right: 93px;
 	align-items: center;
@@ -29,10 +26,7 @@
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(500, 14px, 16px, 0.02em);
 	color: var(--first-title-color);
 	transition: var(--color-tranzition);
 	&:focus, &:hover {
@@ -70,10 +64,7 @@
 }
 
 .header-tel {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(500, 14px, 16px, 0.02em);
 	color: var(--first-text-color);
 	display: flex;
 	align-items: center;
@@ -84,10 +75,7 @@
 }
 
 .header-mail{
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(500, 14px, 16px, 0.02em);
 	color: var(--first-text-color);
 	display: flex;
 	align-items: center;
