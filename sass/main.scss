@@ -8,6 +8,7 @@
 @import './components/title';
 @import './components/pb-none';
 @import './components/btn';
+@import './components/current';
 
 
 
@@ -16,15 +17,13 @@
 @import './utils/mixins';
 
 
-@import './header';
-@import './hero';
-@import './hang';
-@import './work';
-@import './team';
-@import './customer';
-@import './footer';
-
-@import './backdrop';
-@import './modal';
-
-@import './projects';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/offers';
+@import './layout/team';
+@import './layout/customer';
+@import './layout/footer';
+@import './layout/projects';
+@import './layout/backdrop';
+@import './layout/modal';

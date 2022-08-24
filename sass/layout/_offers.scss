@@ -1,4 +1,4 @@
-.work-title {
+.offers__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -8,15 +8,15 @@
 	margin-top: 0;
 	margin-bottom: 50px;
 }
-.work-list {
+.offers__list {
 	display: flex;
 	gap: 30px;
 }
-.work-item {
+.offers__item {
 	position: relative;
 }
 
-.work-img-titel {
+.offers__img-titel {
 	font-size: 14px;
 	line-height: 1.14;
 	text-align: center;

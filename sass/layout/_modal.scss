@@ -11,9 +11,12 @@
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1) rotate(0);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	.backdrop.is-hidden & {
+	transform: translate(-50%, 0) scale(0);
+}
 }
 
-.modal-close-buton {
+.modal__close-buton {
 	position: absolute;
 	right: 8px;
 	top: 8px;
@@ -38,18 +41,18 @@
 	pointer-events: none;
 }
 
-.modal-titel {
+.modal__titel {
 	@include font(null, 20px, 23px, 0.03em);
 	text-align: center;
 	color: #212121;
 	margin-bottom: 12px;
 }
 
-.input-field {
+.input__field {
 	margin-bottom: 10px;
 }
 
-.modal-input {
+.modal__input {
 	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -58,44 +61,45 @@
 	@include font(400, 16px, 30px, 0.01em);
 	color: var(--first-title-color);
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:invalid {
+	border-color: rgba(78, 1, 1, 0.2);
+	}
+	&:valid {
+	border-color: var(--accent-color);
+	}
 	&:focus {
 	border: 1px solid var(--accent-color);
 	outline: none;
 	cursor: pointer;
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	& + .input-icon {
-	fill: var(--accent-color);
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	}
-	&:invalid {
-	border-color: rgba(78, 1, 1, 0.2);
-	}
-	&:valid {
-	border-color: red;
 	}
 }
 
-.modal-input-wrap {
+
+.modal__input-wrap {
 	position: relative;
 }
 
-.input-icon {
+.input__icon {
 	position: absolute;
 	left: 12px;
 	top: 50%;
 	transform: translateY(-50%);
+	.modal__input:focus + & {
+	fill: var(--accent-color);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
 
 }
 
-.input-label {
+.input__label {
 	@include font(400, 12px, 14px, 0.01em);
 	color: #757575;
 	margin-bottom: 4px;
 	display: block;
 }
 
-.modal-button {
+.modal__button {
 	cursor: pointer;
 	min-width: 200px;
 	height: 50px;
@@ -117,7 +121,7 @@
 }
 }
 
-.modal-coments {
+.modal__coments {
 	width: 100%;
 	height: 120px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -134,7 +138,7 @@
 }
 }
 
-.check-text {
+.input__check-text {
 	@include font(400, 14px, 24px, 0.03em);
 	color: var(--first-text-color);
 	display: flex;
@@ -165,7 +169,7 @@
 }
 }
 
-.input-check {
+.input__check {
 	fill: transparent;
 }
 

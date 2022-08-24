@@ -2,7 +2,7 @@
 	border-bottom: 1px solid #ECECEC;
 }
 
-.header-logo {
+.header__logo {
 	@include font(700, 26px, 31px, 0.03em);
 	font-family: "Raleway";
 	font-style: normal;
@@ -11,18 +11,18 @@
 	align-items: center;
 }
 
-.nav__list {
+.navigation__list {
 	display: flex;
 }
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
 	margin-right: 50px;
 }
 
-.header-container {
+.header__container {
 	display: flex;
 	align-items: center;}
 
-.header-link {
+.navigation__link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -34,36 +34,20 @@
 }
 }
 
-
-.current {
-	color: var(--accent-color);
-	position: relative;
-	&::after {
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 4px;
-	background: var(--second-btn-color);
-	border-radius: 2px;
-	left: 0;
-	bottom: -1px;
-}
-}
-
-.contact-icon {
+.header__contact-icon {
 	margin-right: 10px;
 	fill: currentColor;
 }
 
-.contact-mail {
+.header__contact-mail {
 	margin-right: 50px;
 }
-.header-contact {	
+.header__contact {	
 	display: flex;
 	margin-left: auto;
 }
 
-.header-tel {
+.header__tel {
 	@include font(500, 14px, 16px, 0.02em);
 	color: var(--first-text-color);
 	display: flex;
@@ -74,7 +58,7 @@
 }
 }
 
-.header-mail{
+.header__mail {
 	@include font(500, 14px, 16px, 0.02em);
 	color: var(--first-text-color);
 	display: flex;

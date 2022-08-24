@@ -1,9 +1,9 @@
-.customer-list {
+.customer__list {
 	display: flex;
 	justify-content: center;
 	gap: 30px;
 }
-.customer-link {
+.customer__link {
 	width: 170px;
 	height: 92px;
 	background-color: transparent;
@@ -17,14 +17,14 @@
 	border-color: var(--second-btn-color);
 }
 }
-.customer-icon {
+.customer__icon {
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	fill: var(--icons-first-color);
 	transition: var(--fill-tranzition);
-	.customer-link:hover &,
-	.customer-link:focus & {
+	.customer__link:hover &,
+	.customer__link:focus & {
 	fill: var(--second-btn-color);
 }
 }
