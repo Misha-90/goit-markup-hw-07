@@ -17,11 +17,11 @@
 	margin-bottom: 9px;
 }
 .footer__address-maps {
-	@include font(400, 14px, 24px, 0.03em);
+	@include second-link();
 	color: var(--second-title-color);
 }
 .footer__address-mail {
-	@include font(400, 14px, 24px, 0.03em);
+	@include second-link();
 	color: rgba(255, 255, 255, 0.6);
 }
 .footer__address-tel{
@@ -43,7 +43,7 @@
 }
 
 .footer__join-title {
-	@include font(null, 14px, 24px, 0.03em);
+	@include second-link();
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	margin-bottom: 20px;
@@ -82,7 +82,7 @@
 }
 
 .subscription__title {
-	@include font(700, 14px, 16px, 0.03em);
+	@include second-link($fw:700, $lh:16px);
 	text-transform: uppercase;
 	color: var(--second-text-color);
 	align-items: center;

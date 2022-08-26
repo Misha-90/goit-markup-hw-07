@@ -10,7 +10,7 @@
 .hero__title {
 	margin: 0 auto 30px;
 	max-width: 696px;
-	@include font(900, 44px, 60px, 0.06em);
+	@include first-title ();
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--second-title-color);
@@ -19,5 +19,7 @@
 	display: block;
 	margin: 30px auto 0;
 	min-width: 216px;
+	@include btn ();
 }
+
 

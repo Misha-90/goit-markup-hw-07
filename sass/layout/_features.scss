@@ -14,14 +14,14 @@
 }
 
 .features__title {
-	@include font(700, 14px, 16px, 0.03em);
+	@include third-title ($fw:700, $fs:14px, $lh:16px,);
 	text-transform: uppercase;
 	color: var(--first-title-color);
 	margin-bottom: 10px;
 	margin-top: 30px;
 }
 .features__text {
-	@include font(400, 14px, 24px, 0.03em);
+	@include text($fs:14px, $lh:24px,);
 	color: var(--first-text-color);
 }
 li.features__item {
