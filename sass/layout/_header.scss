@@ -26,8 +26,9 @@
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	@include first-link ();
-	transition: var(--color-tranzition);
+		@include first-link ();
+		color: var(--first-title-color);
+		transition: var(--color-tranzition);
 	&:focus, &:hover {
 	color: var(--accent-color);
 }
